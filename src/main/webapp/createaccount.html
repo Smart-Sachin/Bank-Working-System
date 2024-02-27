@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bankstyle.css">
+    <style>
+	    .subMain{
+		    height: 120vh;
+		    border: 2px outset cornflowerblue;
+		    background-color: whitesmoke;
+		}
+        .account_create{
+            border: 2px outset rgb(232, 89, 194);
+            border-radius: 10px;
+            width: 50%;               
+        }       
+       .container{
+            padding-left: 35%;
+       }
+     
+       .submit{
+		    background-color: #01419b;
+		    height: 30px;
+		    width: 100px;
+		    border-radius: 15px;
+		    color: white;
+		}
+		.submit:hover{
+		    background-color: #53f283;
+		    color: white;                   
+		}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="create" method="post">
+        <div class="Main">
+            <div class="subMain">
+                <div class="Header">
+                        <header>CREATING NEW ACCOUNT</header>
+                </div>
+                <div class="HeaderBar">
+                        <a href="index.html">HOME</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#">SERVICES</a>
+                        <a href="#">CAREER</a>
+                        <a href="#">LOGIN/SIGNUP</a>
+                    <div class="search">
+                        <input type="search" name="search" placeholder="Text to search...">
+                        <input type="button" value="Search">
+                    </div>
+                </div>
+                <div class="container">
+                    
+                        <div class="account_create">
+                            <p> Enter Name <span>*</span>
+                                <input type="text" name="uname" id="uname" required>
+                            </p>
+                            <p>Father Name <span>*</span>
+                                <input type="text" name="fname" id="fname" required>
+                            </p>
+                            <p> Date Of Birth <span>*</span>
+                                <input type="text" name="dob" id="dob" required>
+                            </p>
+                            <p> Gender <span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                Male
+                                <input type="radio" name="gender" id="male">&nbsp;&nbsp;
+                                Female
+                                <input type="radio" name="gender" id="fmale">&nbsp;&nbsp;
+                                Other
+                                <input type="radio" name="gender" id="other">&nbsp;&nbsp;
+                            </p>
+                            <p>  Phone No <span>*</span>
+                                <input type="number" name="phno" id="phno" required>
+                            </p>
+                            <p> Email ID <span>*</span>
+                                <input type="email" name="mailid" id="mailid" required>
+                            </p>
+                            <p> Address <span>*</span>
+                                <input type="text" name="address" id="address" required>
+                            </p>
+                            <p> ID Proof Type <span>*</span>
+                                <select name="idproof" id="idproof">
+                                    <option value="">--Select--</option>
+                                    <option value="pan">PAN Card</option>
+                                    <option value="aadhar">Aadhar Card</option>
+                                    <option value="driving">Driving Licence</option>
+                                    <option value="voterid">Voter ID</option>
+
+                                </select>
+                            </p>
+                            <p> ID Proof NO <span>*</span>
+                                <input type="number" name="idproofno" id="idproofno">
+                            </p>
+                            <p> Account Type <span>*</span>
+                                <select name="acctype" id="acctype">
+                                    <option value="">--Select--</option>
+                                    <option value="saving">Saving A/c</option>
+                                    <option value="current">Current A/c</option>
+                                    <option value="business">Business A/c</option>
+                                </select>
+                            </p>
+                            <p> Minimum Balance <span>*</span>
+                                <input type="number" name="balance" id="balance">
+                            </p>
+                             <p> Password <span>*</span>
+                                <input type="password" name="pword" id="pword">
+                             </p>
+                            <center>
+                                    <input class="submit" type="submit" value="Submit">                                
+                            </center>
+                        </div>                                 
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <footer>                    
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="term.html">Term of Use</a>
+                    <a href="privacypol.html">Privacy Policy</a>
+                    <a href="refundpol.html">Refund Policy</a>
+                    <a href="#">&copy; 2023S | SBI</a>
+                    <div class="search">
+                        <input type="search" name="search" placeholder="Text to search...">
+                        <input type="button" value="Search">
+                    </div>               
+                </footer>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
